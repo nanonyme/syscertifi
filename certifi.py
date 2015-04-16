@@ -13,4 +13,4 @@ if platform.system() == "Windows":
 else:
     import ssl
     def where():
-        return ssl.ssl.get_default_verify_paths().openssl_cafile
+        return ssl.get_default_verify_paths().openssl_cafile
