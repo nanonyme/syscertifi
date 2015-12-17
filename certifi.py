@@ -5,9 +5,9 @@ if platform.system() == "Windows":
     import ssl
 
     certfile = wincertstore.CertFile()
+    atexit.register(certfile.close) # cleanup and remove files on shutdown
     certfile.addstore("CA")
     certfile.addstore("ROOT")
-    atexit.register(certfile.close) # cleanup and remove files on shutdown
     def where():
         return certfile
 else:
