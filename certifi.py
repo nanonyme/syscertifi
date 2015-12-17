@@ -9,7 +9,7 @@ if platform.system() == "Windows":
     certfile.addstore("CA")
     certfile.addstore("ROOT")
     def where():
-        return certfile
+        return certfile.name
 else:
     import ssl
     def where():
