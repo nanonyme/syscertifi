@@ -6,6 +6,7 @@ setup(name='syscertifi',
       author_email="seppo.yli-olli+pypi@iki.fi",
       description="Make requests use system certificate stores",
       py_modules=["certifi"],
+      url="https://github.com/nanonyme/syscertifi",
       extras_require={":sys_platform=='win32'": ["wincertstore"]},
       version="0.2"
       )
